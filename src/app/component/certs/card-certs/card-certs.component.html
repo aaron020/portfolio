@@ -1,0 +1,21 @@
+<div class="flex items-center gap-5 p-5 bg-gradient-to-r from-gray-900 to-blue-950 rounded-xl border border-blue-800 shadow-md hover:shadow-lg hover:shadow-blue-700/30 transition-all duration-300 hover:bg-gradient-to-r hover:from-gray-800 hover:to-blue-900 group">
+    <!-- Badge image with enhanced effects -->
+    <div class="relative overflow-hidden rounded-lg transform transition-transform duration-300 group-hover:scale-110">
+      <img class="w-14 h-14 object-contain rounded-lg group-hover:brightness-110 transition-all duration-300" src="{{cardData.imageUrl}}"/>
+    </div>
+    
+    <!-- Content with more space -->
+    <div class="flex-grow transform transition-transform duration-300 group-hover:translate-x-1">
+      <div class="font-medium text-gray-100 transition-colors duration-300 group-hover:text-blue-300">{{cardData.cert}}</div>
+      <div class="text-xs uppercase font-semibold text-gray-400 transition-all duration-300 group-hover:text-blue-400">{{cardData.description}}</div>
+    </div>
+    
+    <!-- Verification button with hover effects -->
+    <a href="{{cardData.certUrl}}" target="_blank" rel="noopener noreferrer" 
+       class="flex items-center justify-center px-3 py-1.5 bg-blue-900/50 hover:bg-green-600 text-blue-300 hover:text-white text-xs font-medium rounded-md transition-all duration-300 border border-blue-700/50 hover:border-green-200 opacity-0 group-hover:opacity-100 transform translate-x-2 group-hover:translate-x-0 shadow-lg">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      Verify
+    </a>
+</div>

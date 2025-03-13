@@ -1,0 +1,49 @@
+<div class="snap-start flex-shrink-0 w-72 md:w-96 rounded-lg bg-gradient-to-b from-gray-900 to-gray-800 shadow-lg overflow-hidden border border-gray-700/50 hover:shadow-blue-500/20 hover:shadow-xl transition-all duration-300 group">
+    <!-- Image container with overlay gradient and zoom effect -->
+    <div class="h-48 w-full relative overflow-hidden">
+      <img class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="{{cardData.imageUrl}}" alt="{{cardData.title}}">
+      <!-- Gradient overlay -->
+      <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60"></div>
+      
+      <!-- Optional: Category/tag badge -->
+      <div class="absolute top-3 right-3">
+        <span class="bg-blue-600/80 text-white text-xs px-2 py-1 rounded-full backdrop-blur-sm">
+          {{cardData.tag}}
+        </span>
+      </div>
+    </div>
+    
+    <div class="p-5 relative">
+      <!-- Subtle accent line -->
+<!-- Dual accent lines that meet in the middle on hover -->
+        <div class="hidden md:flex justify-between items-center mb-3">
+            <!-- Left line -->
+            <div class="w-6 h-1 bg-blue-500 rounded-full group-hover:w-[45%] transition-all duration-300 origin-left"></div>
+
+            <!-- Gap between lines (shrinks on hover) -->
+            <div class="grow mx-2 group-hover:mx-0 transition-all duration-300"></div>
+
+            <!-- Right line -->
+            <div class="w-6 h-1 bg-blue-500 rounded-full group-hover:w-[45%] transition-all duration-300 origin-right"></div>
+        </div>
+      
+      <h3 class="text-lg font-semibold text-white group-hover:text-blue-300 transition-colors">{{cardData.title}}</h3>
+      
+      <p class="mt-2 mb-3 text-gray-400 text-sm h-20 line-clamp-4 group-hover:text-gray-300 transition-colors">{{cardData.description}}</p>
+      
+      <div class="flex justify-end mt-4">
+        <a href="{{cardData.buttonLink}}" target="_blank" class="inline-block">
+          <button class="px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-lg border border-transparent hover:from-transparent hover:to-transparent hover:border-blue-500 hover:text-blue-300 transition-all duration-300 transform group-hover:translate-y-[-2px] shadow-md hover:shadow-blue-500/50">
+            Read More
+            <!-- Arrow icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </button>
+        </a>
+      </div>
+      
+      <!-- Bottom corner decoration -->
+      <div class="absolute -bottom-6 -right-6 w-12 h-12 rounded-full bg-blue-500/10 blur-xl group-hover:bg-blue-400/20 group-hover:w-16 group-hover:h-16 transition-all duration-500"></div>
+    </div>
+  </div>
