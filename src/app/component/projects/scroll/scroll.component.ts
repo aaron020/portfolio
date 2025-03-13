@@ -16,7 +16,7 @@ export class ScrollComponent {
       description: 'This is a description for card 1. Add your content here. this one has a lot of text,his one has a lot of text his one has a lot of texthis one has a lot of text, a lot of text his one has a lot of texthis one has a lot of text, a lot of text his one has a lot of texthis one has a lot of text',
       imageUrl: 'https://portfolio-info-site-csdcd.s3.eu-west-1.amazonaws.com/about-me/project-pic/topic-test.png',
       tag: 'AWS',
-      buttonLink: 'https://www.google.co.uk/'
+      buttonLink: '/topic-test'
     },
     {
       title: 'Card Title 2',
