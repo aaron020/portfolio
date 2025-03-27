@@ -20,4 +20,10 @@ export const routes: Routes = [
             return import('./pages/project-details/project-details.component'). then((m) => m.ProjectDetailsComponent);
         },   
     },
+    {
+        path: 'data-entry',
+        loadComponent:() => { 
+            return import('./pages/projects/data-entry/data-entry.component'). then((m) => m.DataEntryComponent);
+        },   
+    },
 ];
