@@ -1,1 +1,196 @@
-<p>data-entry works!</p>
+<!-- Technical Project Blog Article Template -->
+
+<div class="bg-gray-900 min-h-screen text-gray-200">
+  
+    <header class="bg-gradient-to-b from-gray-800 to-gray-900 border-b border-gray-700/50 py-12">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col items-center text-center">
+          <span class="bg-blue-600/80 text-white text-sm px-3 py-1 rounded-full mb-4">
+            Real World Application
+          </span>
+          <h1 class="text-3xl md:text-5xl font-bold mb-4 text-white">Data Entry System</h1>
+          
+          <!-- Decorative Accent Lines -->
+          <div class="flex justify-center items-center mb-6 w-full max-w-lg">
+            <div class="w-16 h-1 bg-blue-500 rounded-full"></div>
+            <div class="grow mx-2 h-px bg-gray-700"></div>
+            <div class="w-16 h-1 bg-blue-500 rounded-full"></div>
+          </div>
+          
+          <p class="text-lg text-gray-300 max-w-3xl">
+            This project was something I worked on for a small local business, a modern data entry system and document generator. 
+            As this is used by the business, the code is private - but Ive got a good few screenshots below with data blurred out. 
+          </p>
+          
+        </div>
+      </div>
+     </header>
+    
+      <!-- Main Content Area -->
+      <main class="container mx-auto px-4 py-12">
+      
+        <!-- Project Image/Demo -->
+        <div class="mb-16 rounded-xl overflow-hidden shadow-2xl relative">
+          <img src="https://portfolio-info-site-csdcd.s3.eu-west-1.amazonaws.com/project/data-entry/home_edited.png" alt="Project Screenshot" class="w-full h-auto">
+          
+          <!-- Optional Overlay for Key Info -->
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-gray-900 to-transparent p-6">
+            <div class="flex flex-wrap gap-3 mb-2">
+              <span class="bg-blue-600/90 text-white text-xs px-3 py-1 rounded-full backdrop-blur-sm">Flask</span>
+              <span class="bg-blue-600/90 text-white text-xs px-3 py-1 rounded-full backdrop-blur-sm">My SQL</span>
+              <span class="bg-blue-600/90 text-white text-xs px-3 py-1 rounded-full backdrop-blur-sm">Python</span>
+            </div>
+            <p class="text-white text-lg">Taken: March 2025</p>
+          </div>
+        </div>
+        
+        <!-- Table of Contents -->
+        <div class="lg:flex gap-8 mb-12">
+          <div class="lg:w-1/4 mb-8 lg:mb-0">
+            <div class="sticky top-8 bg-gray-800/50 rounded-xl p-6 border border-gray-700/50">
+              <h2 class="text-xl font-bold text-white mb-4">Contents</h2>
+              <ul class="space-y-3">
+                <li>
+                  <a href="{{router}}#overview" class="text-blue-400 hover:text-blue-300 flex items-center">
+                    <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></span>
+                    Project Overview
+                  </a>
+                </li>
+                <li>
+                  <a href="{{router}}#works" class="text-blue-400 hover:text-blue-300 flex items-center">
+                    <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></span>
+                    How it Works
+                  </a>
+                </li>
+                <li>
+                  <a href="{{router}}#features" class="text-blue-400 hover:text-blue-300 flex items-center">
+                    <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></span>
+                    Features added and why
+                  </a>
+                </li>
+                <li>
+                  <a href="{{router}}#conclusion" class="text-blue-400 hover:text-blue-300 flex items-center">
+                    <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></span>
+                    What I learnt / Conclusion
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Article Content -->
+          <div class="lg:w-3/4">
+            <!-- Project Overview Section -->
+            <section id="overview" class="mb-16">
+              <div class="flex items-center mb-6">
+                <h2 class="text-2xl md:text-3xl font-bold text-white">Project Overview</h2>
+                <div class="ml-4 grow h-px bg-blue-500/30"></div>
+              </div>
+              
+              <div class="prose prose-lg prose-invert max-w-none">
+                <p>
+                    Basically, a local business was in desperate need of a new data entry system—and when I say desperate, I mean their current system was running on a Windows XP computer. A computer they were afraid to turn off in case it didn’t turn back on. It was just an old database with a basic, almost Excel-looking UI.
+                </p>
+                <br>
+                <p>
+                    One of their major concerns was that they had never been able to back up any of their data. So that was the first thing I tackled—it took a bit of digging, but I eventually found a way to convert the database into a CSV file (thankfully).
+                    Once I had the data in CSV format, I worked on migrating it into a more modern, reliable database — one that could be easily backed up and restored. So, I set up a MySQL database.
+                </p>
+                <br>
+                <p>Now came the issue of making a UI to front this database. I spoke with the owner of the business—he had a lot of ideas for what he wanted the UI to do, new features that should be added, and what needed to be kept from the old UI. Tbh, I knew it would be easy enough to impress when their previous UI was basically an Excel sheet.</p>
+                
+              </div>
+            </section>
+            
+            <section id="works" class="mb-16">
+                <div class="flex items-center mb-6">
+                  <h2 class="text-2xl md:text-3xl font-bold text-white">How it works</h2>
+                  <div class="ml-4 grow h-px bg-blue-500/30"></div>
+                </div>
+                <p>The frontend is just HTML/ CSS with bootstrap. I used python flask for the backend, then a MySQL database. They did not want it online so the application and database run locally (they backup the database reguarly)</p>
+            </section>
+
+
+            <section id="features" class="mb-16">
+              <div class="flex items-center mb-6">
+                <h2 class="text-2xl md:text-3xl font-bold text-white">Features added and why</h2>
+                <div class="ml-4 grow h-px bg-blue-500/30"></div>
+              </div>
+            <br>
+              <div class="flex items-center mb-6">
+                <h6 class="text-xl md:text-xl text-white">Backup & Restore</h6>
+                <div class="ml-4 grow h-px bg-blue-500/30"></div>
+              </div>
+              
+              <div class="prose prose-lg prose-invert max-w-none">
+                <p>
+                   So, I've mentioned this a few times now, but one of their major issues was not being able to back up the database. So I wrote a Python script that uses the mysqldump.exe program to back up the database to a specified file location. I also stored backup information in the database, allowing them to see when their last backup was, what the file was called, and where the backup was stored.
+                </p>
+                
+                <div class="bg-gray-800 rounded-xl p-6 my-6 flex justify-center">
+                  <img src="https://portfolio-info-site-csdcd.s3.eu-west-1.amazonaws.com/project/data-entry/backup.png" alt="System Architecture Diagram" class="max-w-full h-auto rounded">
+                </div>
+                
+                <p>And obviously there wouldnt be much point being able to backup, if you couldnt also restore from backup... So I added that also</p>
+
+                <div class="bg-gray-800 rounded-xl p-6 my-6 flex justify-center">
+                    <img src="https://portfolio-info-site-csdcd.s3.eu-west-1.amazonaws.com/project/data-entry/restore.png" alt="System Architecture Diagram" class="max-w-full h-auto rounded">
+                </div>
+                <br>
+                <div class="flex items-center mb-6">
+                    <h6 class="text-xl md:text-xl text-white">The actual data entry / document generation</h6>
+                    <div class="ml-4 grow h-px bg-blue-500/30"></div>
+                </div>
+                <p>
+                    As this is a data entry system, the main feature here is obviously being able to actually enter data. But if you look down at the bottom of the screenshot, users can also generate several different business documents based on the data they've already entered, such as invoices, work orders, delivery dockets, etc.
+                </p>
+
+                <div class="bg-gray-800 rounded-xl p-6 my-6 flex justify-center">
+                    <img src="https://portfolio-info-site-csdcd.s3.eu-west-1.amazonaws.com/project/data-entry/data_entry.png" alt="System Architecture Diagram" class="max-w-full h-auto rounded">
+                </div>
+
+                <p>Heres what a generated invoice looks like (all data added automatically, calculation done automatically)</p>
+                <div class="bg-gray-800 rounded-xl p-6 my-6 flex justify-center">
+                    <img src="https://portfolio-info-site-csdcd.s3.eu-west-1.amazonaws.com/project/data-entry/invoice_gen.png" alt="System Architecture Diagram" class="max-w-full h-auto rounded">
+                </div>
+
+                <p>Another annoying task they faced was collecting all invoices for each customer dealt with during the month and printing them individually at month-end. The owner mentioned this process would take an employee for half a day, sometimes even a full day. To address this, I created an automated solution, the data was all there in the database - it just meant timestamping, pulling data for the correct customer and generating the invoices (which I had already done). Now, they simply need to enter the date range and customer number to generate a list of invoices, hit print, done.</p>
+
+                <div class="bg-gray-800 rounded-xl p-6 my-6 flex justify-center">
+                    <img src="https://portfolio-info-site-csdcd.s3.eu-west-1.amazonaws.com/project/data-entry/invoices.png" alt="System Architecture Diagram" class="max-w-full h-auto rounded">
+                </div>
+                
+                <br>
+                <div class="flex items-center mb-6">
+                    <h6 class="text-xl md:text-xl text-white">Customer search</h6>
+                    <div class="ml-4 grow h-px bg-blue-500/30"></div>
+                </div>
+
+                <p>
+                    During data entry, they struggled to locate customer numbers for specific customers. To solve this problem, I developed a search feature that allowed them to find customers by entering a full name or just a few initial letters. With the search results, they could simply click an "add" button to include the customer in their current data entry session, or make edits to the customer information if needed.
+                </p>
+                
+                <div class="bg-gray-800 rounded-xl p-6 my-6 flex justify-center">
+                    <img src="https://portfolio-info-site-csdcd.s3.eu-west-1.amazonaws.com/project/data-entry/customer.png" alt="System Architecture Diagram" class="max-w-full h-auto rounded">
+                </div>
+              </div>
+            </section>
+            
+            <!-- Conclusion Section -->
+            <section id="conclusion" class="mb-16">
+              <div class="flex items-center mb-6">
+                <h2 class="text-2xl md:text-3xl font-bold text-white">What I learnt / Conclusion</h2>
+                <div class="ml-4 grow h-px bg-blue-500/30"></div>
+              </div>
+              
+              <div class="prose prose-lg prose-invert max-w-none">
+                <p>
+                  I learnt a lot working on this project. It was interesting to work directly with the customer that would be using said project — converting their requirements into actual working features was difficult at times (as their requirements would change occasionally), but it was also very rewarding to see something I had built being used in the real world to actually help and save people a lot of time.
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+  </div>   
+  
